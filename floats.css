@@ -1,0 +1,105 @@
+@charset "utf-8";
+/* =========================================================== 
+   Practice CSS Floats
+============================================================== */
+
+body {
+  margin-left: auto; 
+  margin-right: auto;    
+  max-width: 960px; 
+  min-width: 640px; 
+  width: 100%; }
+/* 
+  Apply a float to <li> tags inside <nav>.
+  Make sure the floats follow the HTML source order.
+*/
+
+header > ul > li{
+  display: block;
+  float: left;
+}
+
+.wrapper li {
+  display: flex; 
+  justify-content: center;
+  float: left;
+  align-items: center; 
+  width: 20%;
+}
+
+ 
+/* 
+  Float '.img-featured' so that content flows around its left side. 
+  Apply a 15 pixel margin to the top, bottom and left sides.
+*/
+.img-featured {
+  display: block; 
+  float: right;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+
+
+/* 
+  Float '.img-article' so that content flows around its right side.
+  Apply a 20 pixel right margin.    
+*/
+.img-article {
+  display: block; 
+  float: left;
+  margin-top: 10px;
+  margin-right: 20px;
+  
+}
+
+
+
+/*  
+  Float '.article-content' so that it's positioned next to '.img-article'.
+  Adjust the width of '.article-content' so that both elements are laid out side by side.
+*/
+.article-content{
+position: relative;
+overflow: auto;
+max-width: fit-content;
+  
+}
+
+
+/* Footer Styles */
+.group::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* Footer*/
+footer{
+  padding-top: 480px;
+  display: block;
+  height: 500px;
+}
+
+footer > span{
+  align-items: center;
+}
+
+/* 
+  Center the navigation inside the header. 
+*/
+header > .wrapper{
+  padding-left: 30%;
+  padding-right: 30%;
+  position: inherit;
+  position: center;
+}
+
+
+
+
+
+
+
+
+
